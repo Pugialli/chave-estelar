@@ -7,11 +7,13 @@ import { IconSection } from '../IconSection'
 
 export function SectionTarotForWhat() {
   return (
-    <div className="relative flex items-center justify-center">
-      <Image src={tarotCards} className="" alt="Background Tarot" />
-      <div className="flex flex-col gap-4 pl-28 pr-36 text-themeGreen">
-        <h2 className="text-5xl font-extrabold">Tarot pra quê?</h2>
-        <div className="flex flex-col gap-4 text-xl">
+    // <div className="flex h-full items-center bg-red-600">
+    <div className="grid h-full grid-cols-12 gap-5">
+      {/* <Image src={tarotCards} className="w-1/4 lg:w-full" alt="Tarot Cards" /> */}
+      <Image src={tarotCards} className="col-span-4" alt="Tarot Cards" />
+      <div className="col-span-7 flex flex-col gap-2 pl-4 pt-4 lg:gap-4 lg:py-16 lg:pl-24">
+        <h2 className="text-sm font-extrabold lg:text-5xl">Tarot pra quê?</h2>
+        <div className="flex flex-col gap-4 text-xs lg:text-xl">
           <p>Precisa compreender uma situação complicada?</p>
           <p>Quer entender como está sua relação com alguém?</p>
           <p>
@@ -30,13 +32,22 @@ export function SectionTarotForWhat() {
             assertivo.
           </p>
         </div>
-        <div className="mx-4 flex justify-between pt-12">
-          <IconSection title="Elucide situações" icon={iconMente} />
+        <div className="grid grid-cols-6 justify-between gap-2 py-4 lg:py-12">
+          <IconSection
+            title="Elucide situações"
+            icon={iconMente}
+            className="col-span-3 lg:col-span-2"
+          />
           <IconSection
             title="Amplie seu autoconhecimento"
             icon={iconMeditacao}
+            className="col-span-3 lg:col-span-2"
           />
-          <IconSection title="Receba orientação" icon={iconTalk} />
+          <IconSection
+            title="Receba orientação"
+            icon={iconTalk}
+            className="col-span-6 lg:col-span-2"
+          />
         </div>
       </div>
     </div>

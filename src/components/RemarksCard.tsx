@@ -13,23 +13,23 @@ export function RemarksCard({
   divided = false,
 }: IconCardProps) {
   return (
-    <>
+    <div className="col-span-2 lg:col-span-4">
       {divided ? (
-        <Card className="flex items-center gap-4 bg-background/70 p-4	">
-          <CardTitle className="w-[512px] text-center text-2xl font-extrabold">
+        <Card className="flex h-full w-full flex-col items-center gap-1 bg-background/70 p-2 text-center lg:flex-row lg:gap-4 lg:p-4">
+          <CardTitle className="lg:w-120 text-xxs font-extrabold lg:text-2xl">
             {title}
           </CardTitle>
-          <CardContent className="p-0 text-xl font-medium">
+          <CardContent className="text-xxss p-0 font-medium lg:text-xl">
             {children}
           </CardContent>
         </Card>
       ) : (
-        <Card className="flex items-center justify-center bg-background/70 p-4	">
-          <CardContent className="w-full p-0 text-xl font-medium">
+        <Card className="flex h-full w-full items-center justify-center bg-background/70 p-4 text-center">
+          <CardContent className="text-xxss w-full p-0 font-medium lg:text-xl">
             {children}
           </CardContent>
         </Card>
       )}
-    </>
+    </div>
   )
 }

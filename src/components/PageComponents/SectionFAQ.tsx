@@ -7,8 +7,10 @@ import {
 
 export function SectionFAQ() {
   return (
-    <div className="flex flex-col gap-4 px-36 py-24 text-themeGreen">
-      <h2 className="text-4xl font-extrabold">Perguntas frequentes</h2>
+    <div className="flex flex-col gap-4 px-12 py-8 lg:px-36 lg:py-24">
+      <h2 className="text-sm font-extrabold lg:text-4xl">
+        Perguntas frequentes
+      </h2>
       <Accordion type="single" collapsible className="w-full">
         <AccordionItem value="item-1">
           <AccordionTrigger>Tarot online funciona?</AccordionTrigger>

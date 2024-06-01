@@ -9,15 +9,12 @@ const config = {
         '4xl': '2.5rem',
       },
       width: {
-        card: '37rem',
         100: '28rem',
-        a4: '794px',
-        a5: '560px',
+        110: '31rem',
+        120: '32rem',
         '9/10': '90%',
       },
       height: {
-        a4: '1119px',
-        a5: '790px',
         '9/10': '90%',
       },
       colors: {
@@ -42,6 +39,20 @@ const config = {
       },
       aria: {
         invalid: 'invalid="true"',
+      },
+      fontSize: {
+        xxss: [
+          '0.25rem',
+          {
+            lineHeight: '0.375rem',
+          },
+        ],
+        xxs: [
+          '0.5rem',
+          {
+            lineHeight: '0.75rem',
+          },
+        ],
       },
     },
   },
